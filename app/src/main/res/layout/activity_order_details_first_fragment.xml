@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order_details_first_fragment"
+    android:orientation="vertical"
+    android:background="#34F0EAD6">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/tophead"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#34F0EAD6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:onClick="backbtn"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Order details"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:textSize="25sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order ID"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_condensed_light"/>
+
+            <EditText
+                android:id="@+id/order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:inputType="text"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:text="Receipient name"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/receipent_name"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receipient Phone"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_condensed_light"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/receipent_phone"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:inputType="phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Details"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_condensed_light"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:id="@+id/order_details"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reciepient Address"
+                android:textSize="15sp"
+                android:id="@+id/res_details"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_condensed_light"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:id="@+id/receipent_address"
+                android:inputType="text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="proceedorderdetails"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="20dp"
+                    android:text="Proceeed" />
+
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:backgroundTint="@color/black"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:paddingStart="20dp"-->
+<!--                    android:paddingEnd="20dp"-->
+<!--                    android:text="Decline" />-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

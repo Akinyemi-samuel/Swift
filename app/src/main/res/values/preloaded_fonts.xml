@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alice</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/poppins_thin</item>
+        <item>@font/pt_serif_bold</item>
+        <item>@font/roboto_condensed_bold_italic</item>
+        <item>@font/roboto_condensed_light</item>
+        <item>@font/roboto_condensed_light_italic</item>
+        <item>@font/roboto_condensed_regular_italic</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>

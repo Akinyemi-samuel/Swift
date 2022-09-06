@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ACCEPTED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_container"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Delivered"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06-05-22"
+                android:textSize="15sp"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/roboto_thin"
+                android:layout_alignParentEnd="true"
+                android:padding="4dp"
+                />
+
+            <!--            row1-->
+            <RelativeLayout
+                android:id="@+id/row_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtorder">
+
+                <TextView
+                    android:id="@+id/nametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_thin"
+                    android:paddingTop="4dp"
+                    android:text="Name :"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profilename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:fontFamily="@font/roboto_condensed_light"
+                    android:paddingTop="4dp"
+                    android:text="John app"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!--            row2-->
+            <RelativeLayout
+                android:id="@+id/row_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_1"
+                android:paddingTop="5dp">
+
+
+            </RelativeLayout>
+
+            <!--            row3-->
+            <RelativeLayout
+                android:id="@+id/row_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_2"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_thin"
+                    android:paddingTop="4dp"
+                    android:text="Product name :"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="99dp"
+                    android:fontFamily="@font/roboto_condensed_light"
+                    android:maxLength="42"
+                    android:paddingTop="4dp"
+                    android:text="Blood pressure monitor"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!--            row4-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_3"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/Order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#28808080"
+                    android:padding="5dp"
+                    android:text="Order #14ff25"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    android:text="SUCCESS"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
