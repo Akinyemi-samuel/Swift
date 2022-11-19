@@ -37,19 +37,19 @@
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/raduis_left.xml" value="0.193" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/raduis_right.xml" value="0.193" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/drawable/ring.xml" value="0.192" />
-        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_about_us.xml" value="0.25" />
+        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_about_us.xml" value="0.22" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_complaint.xml" value="0.25" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_edit_profile.xml" value="0.33" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_history.xml" value="0.25" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_notification.xml" value="0.21" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_opening.xml" value="0.22" />
-        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_order_details_first_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_order_details_first_fragment.xml" value="0.25" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_order_process.xml" value="0.2" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_privacy_policy.xml" value="0.33" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_security.xml" value="0.33" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_terms_of_services.xml" value="0.33" />
-        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_user_login.xml" value="0.22" />
+        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_user_login.xml" value="0.25" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/complaint_list_design.xml" value="0.33" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/dialog1.xml" value="0.25" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/editprofile.xml" value="0.20416666666666666" />
@@ -59,7 +59,7 @@
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_rides_.xml" value="0.33" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/fragment_settings_.xml" value="0.25" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/history_item_design.xml" value="0.25" />
-        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/item_design.xml" value="0.33" />
+        <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/item_design.xml" value="0.22" />
         <entry key="..\:/Users/samfr/AndroidStudioProjects/MyApplication2/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
       </map>
     </option>

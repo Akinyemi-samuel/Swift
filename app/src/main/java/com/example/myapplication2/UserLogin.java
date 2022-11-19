@@ -17,7 +17,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -51,6 +54,7 @@ public class UserLogin extends AppCompatActivity {
     Button log_btn;
     ProgressBar load;
     ImageView fingerprintimg;
+    boolean passwordvisible;
 
     private Executor executor;
     private BiometricPrompt biometricPrompt;
@@ -108,7 +112,35 @@ public class UserLogin extends AppCompatActivity {
 //        }
 
 
+boolean finger = getIntent().getBooleanExtra("key",false);
+if(finger == true){
+    fingerprintimg.setVisibility(View.VISIBLE);
 
+}
+
+password.setOnTouchListener(new View.OnTouchListener() {
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        final int Right = 2;
+        if (motionEvent.getAction() == MotionEvent.ACTION_UP){
+          if (motionEvent.getRawX()>=password.getRight()-password.getCompoundDrawables()[Right].getBounds().width()){
+             int selection = password.getSelectionEnd();
+             if(passwordvisible){
+                 password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.visibility_off,0 );
+                 password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                 passwordvisible= false;
+             }else{
+                 password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.ic_baseline_visibility_24,0);
+                 password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                 passwordvisible = true;
+             }
+               password.setSelection(selection);
+             return true;
+            }
+        }
+        return false;
+    }
+});
 
         BiometricManager biometricManager = BiometricManager.from(this);
             switch (biometricManager.canAuthenticate(BIOMETRIC_STRONG | DEVICE_CREDENTIAL)) {

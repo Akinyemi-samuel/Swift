@@ -18,7 +18,9 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Settings_Fragment extends Fragment {
 CardView logout_menu;
@@ -28,7 +30,7 @@ CardView logout_menu;
    ImageView profileimg;
    TextView security_close,cancel_logout,confirm_logout;
    RelativeLayout security_drpdwn;
-   SwitchCompat fingerprintswitch;
+   Switch fingerprintswitch;
    ProgressBar load;
    boolean toogle;
     SharedPreferences sharedPreferences;
@@ -150,7 +152,20 @@ profileimg.setOnClickListener(new View.OnClickListener() {
 
 
 
-
+fingerprintswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if (isChecked){
+            fingerprintswitch.setChecked(true);
+Intent intent =new Intent(getContext(),UserLogin.class);
+intent.putExtra("key",true);
+startActivity(intent);
+getActivity().finish();
+        }else{
+            editprofilebutton.setVisibility(View.VISIBLE);
+        }
+    }
+});
 
 
         return view;

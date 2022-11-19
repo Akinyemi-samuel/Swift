@@ -235,7 +235,7 @@
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
-                    <androidx.appcompat.widget.SwitchCompat
+                    <Switch
                         android:id="@+id/fingerprintswitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
