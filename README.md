@@ -19,4 +19,4 @@ Before starting you need to have Java,JDK and Android-studio installed
 # starting
 
 #Clone this project
-<p> $ git clone https://github.com/maurodesouza/profile-readme-generator</p>
+<p> $ git clone https://github.com/Samfrosh/Dispatch/</p>
