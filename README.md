@@ -4,7 +4,7 @@
 Rider delivery application.
 
 # About
-Swift is a mobile delivery application that plagues te issues delivery riders encounters in their everyday delivery task.
+Swift is a mobile delivery application that plagues the issues delivery riders encounters in their everyday delivery task.
 
 # Main Technologies
 .Java
